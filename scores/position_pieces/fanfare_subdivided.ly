@@ -14,21 +14,21 @@ va = \relative c {
   \set countPercentRepeats = ##t
   \clef "bass"
 
-  g8-0 g g'-2 g g g g g
+  g8-0\f-. (g-.) g'-2 g g-. (g-. g-. g-.)
 
-  fis-1 g a-4 fis g-2 g d-0 d
+  fis-1 g a-4 fis g-2-. (g-.) d-0-. (d-.)
 
-  g,-0 g b'-1 b b b b b 
+  g,-0-. (g-.) b'-1 b b-. (b-. b-. b-.) 
   
-  a-0 b-1 c-2 a b b b b
+  a-0 b-1 c-2 a b-. (b-. b-. b-.)
 
-  d-2 d,-0 d' e-4 d-4 c b a 
+  d-2\downbow d,-0 d' e-4 d-4 c b a 
 
-  g-2 g,-0 g' a-4 g g d-0 d 
+  g-2 g,-0 g' a-4 g-. (g-.) d-0-. (d-.) 
 
   e-1 fis g e d g b d
   
-  d c b a g g g, g
+  d c b a g-. (g-.) g,-. (g-.)
 }
 
 music = \new StaffGroup <<
