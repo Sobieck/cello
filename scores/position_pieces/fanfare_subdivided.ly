@@ -1,7 +1,7 @@
 \version "2.24.3"
 
 \header {
-  title     = \markup \bold \italic "Fanfare"
+  title     = \markup \bold \italic "Fanfare (subdivided)"
   composer  = "Rick Mooney"
 }
 
