@@ -14,21 +14,25 @@ va = \relative c {
   \set countPercentRepeats = ##t
   \clef "bass"
 
-  g8-0\f-. (g-.) g'-2 g g-. (g-. g-. g-.)
+  \set Score.caesuraType =
+    #'((breath . spacer)
+       (scripts . (outsidecomma)))
 
-  fis-1 g a-4 fis g-2-. (g-.) d-0-. (d-.)
+  g8-0\f-.( g-.) g'-2 g g-.( g-. g-. g-.)
 
-  g,-0-. (g-.) b'-1 b b-. (b-. b-. b-.) 
+  fis-1 g a-4 fis g-2-.( g-.) d-0-.( d-.) \break
+
+  g,-0-.( g-.) b'-1 b b-.( b-. b-. b-.) 
   
-  a-0 b-1 c-2 a b-. (b-. b-. b-.)
+  a-0 b-1 c-2 a b-.( b-. b-. b-.) \caesura \break
 
   d-2\downbow d,-0 d' e-4 d-4 c b a 
 
-  g-2 g,-0 g' a-4 g-. (g-.) d-0-. (d-.) 
+  g-2 g,-0 g' a-4 g-.( g-.) d-0-.( d-.) \break
 
   e-1 fis g e d g b d
   
-  d c b a g-. (g-.) g,-. (g-.)
+  d c b a g-.( g-.) g,-.( g-.)
 }
 
 music = \new StaffGroup <<
