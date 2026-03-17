@@ -45,18 +45,22 @@
     \break
 
     \repeat volta 2 { 
-      b'4\flageolet_\markup { II } b\flageolet b-1_\markup { I } b 
+      a-0 a a-1 a
+      
+      b-3 b b-1 b 
     }
 
     \repeat volta 2 { 
-      e,\flageolet_\markup { III } e\flageolet e-1_\markup { II } e 
+      d,-0 d d-1 d
+
+      e-3 e e-1 e 
     }
 
     \repeat volta 2 { 
-      a,\flageolet_\markup { IV } a\flageolet a-1_\markup { III } a 
+      g,-0 g g-1 g
+
+      a-3 a a-1 a 
     }
-
-
   }
 }
 
