@@ -68,8 +68,10 @@
 
   \header {
     title = "Double Stop Practice"
+    subsubtitle = "Start hopping. Then drop elbow and wrap over the upper string. Eventually collapse knuckle. Vary position"
   }
 
+  
   \new Staff \with {
 	  midiInstrument = "cello"
 	  instrumentName = \markup \center-column { "cello" }
@@ -78,9 +80,41 @@
     \relative
     \clef "bass"
     \set Score.doubleRepeatBarType = #":|.|:"
-    
+
     \repeat volta 2 { 
-      g'4-2 g, b'-1 b
+      g'4 d' g, d'
+
+      <g, d'>1 
+    }
+
+    \repeat volta 2 { 
+      f4 c' f, c'
+
+      <f, c'>1 
+    }
+
+    \repeat volta 2 { 
+      e4 b' e, b'
+
+      <e, b'>1 
+    }
+
+    \repeat volta 2 { 
+      f,4 c' f, c'
+
+      <f, c'>1 
+    }
+
+    \repeat volta 2 { 
+      e4 b' e, b'
+
+      <e, b'>1 
+    }
+
+    \repeat volta 2 { 
+      d4 a' d, a'
+
+      <d, a'>1 
     }
 
   }
@@ -91,6 +125,7 @@
 
   \header {
     title = "Trill Practice"
+    subsubtitle = "Vary Positions and strings"
   }
 
   \new Staff \with {
@@ -101,11 +136,98 @@
     \relative
     \clef "bass"
     \set Score.doubleRepeatBarType = #":|.|:"
+    \tempo 4=60
+    
     
     \repeat volta 2 { 
-      g'4-2 g, b'-1 b
+      d8( e d e d e d e)
     }
 
+    \repeat volta 2 {
+      \tuplet 3/2 { d( e d  e d e d e d e d e) }
+    }
+
+    \repeat volta 2 { 
+      d16( e d e d e d e d e d e d e d e)
+    }
+
+
+    d1\trill
+    
+
+    \break
+
+    \repeat volta 2 { 
+      d8( f d f d f d f)
+    }
+
+    \repeat volta 2 {
+      \tuplet 3/2 { d( f d  f d f d f d f d f) }
+    }
+
+    \repeat volta 2 { 
+      d16( f d f d f d f d f d f d f d f)
+    }
+
+
+    \pitchedTrill
+    d1\startTrillSpan f 
+    
+
+    \break
+
+    \repeat volta 2 { 
+      d8\stopTrillSpan( fis d fis d fis d fis)
+    }
+
+    \repeat volta 2 {
+      \tuplet 3/2 { d( fis d  fis d fis d fis d fis d fis) }
+    }
+
+    \repeat volta 2 { 
+      d16( fis d fis d fis d fis d fis d fis d fis d fis)
+    }
+
+
+    \pitchedTrill
+    d1\startTrillSpan fis 
+
+
+    \break
+
+    \repeat volta 2 { 
+      eis8\stopTrillSpan( fis eis fis eis fis eis fis)
+    }
+
+    \repeat volta 2 {
+      \tuplet 3/2 { eis( fis eis  fis eis fis eis fis eis fis eis fis) }
+    }
+
+    \repeat volta 2 { 
+      eis16( fis eis fis eis fis eis fis eis fis eis fis eis fis eis fis)
+    }
+
+    \pitchedTrill
+    eis1\startTrillSpan fis 
+
+    \break
+
+
+    \repeat volta 2 { 
+      d8\stopTrillSpan( g d g d g d g)
+    }
+
+    \repeat volta 2 {
+      \tuplet 3/2 { d( g d g d g d g d g d g) }
+    }
+
+    \repeat volta 2 { 
+      d16( g d g d g d g d g d g d g d g)
+    }
+
+
+    \pitchedTrill
+    d1\startTrillSpan g 
   }
 
 }
