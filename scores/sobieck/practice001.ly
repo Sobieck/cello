@@ -45,22 +45,67 @@
     \break
 
     \repeat volta 2 { 
-      a-0 a a-1 a
+      a-0 <a-0 a-1> <a-0 a-1> a-1
       
       b-3 b b-1 b 
     }
 
     \repeat volta 2 { 
-      d,-0 d d-1 d
+      d,-0 <d-0 d-1> <d-0 d-1> d
 
       e-3 e e-1 e 
     }
 
     \repeat volta 2 { 
-      g,-0 g g-1 g
+      g,-0 <g-0 g-1> <g-0 g-1> g
 
       a-3 a a-1 a 
     }
   }
 }
 
+\score {
+
+  \header {
+    title = "Double Stop Practice"
+  }
+
+  \new Staff \with {
+	  midiInstrument = "cello"
+	  instrumentName = \markup \center-column { "cello" }
+  } \relative c {
+    \key c \major
+    \relative
+    \clef "bass"
+    \set Score.doubleRepeatBarType = #":|.|:"
+    
+    \repeat volta 2 { 
+      g'4-2 g, b'-1 b
+    }
+
+  }
+}
+
+
+\score {
+
+  \header {
+    title = "Trill Practice"
+  }
+
+  \new Staff \with {
+	  midiInstrument = "cello"
+	  instrumentName = \markup \center-column { "cello" }
+  } \relative c {
+    \key c \major
+    \relative
+    \clef "bass"
+    \set Score.doubleRepeatBarType = #":|.|:"
+    
+    \repeat volta 2 { 
+      g'4-2 g, b'-1 b
+    }
+
+  }
+
+}
