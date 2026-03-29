@@ -158,39 +158,39 @@
     \break
 
     \repeat volta 2 { 
-      d8( f d f d f d f)
+      e8( f e f e f e f)
     }
 
     \repeat volta 2 {
-      \tuplet 3/2 { d( f d  f d f d f d f d f) }
+      \tuplet 3/2 { e( f e  f e f e f e f e f) }
     }
 
     \repeat volta 2 { 
-      d16( f d f d f d f d f d f d f d f)
+      e16( f e f e f e f e f e f e f e f)
     }
 
 
     \pitchedTrill
-    d1\startTrillSpan f 
+    e1\startTrillSpan f 
     
 
     \break
 
     \repeat volta 2 { 
-      d8\stopTrillSpan( fis d fis d fis d fis)
+      e8\stopTrillSpan( fis e fis e fis e fis)
     }
 
     \repeat volta 2 {
-      \tuplet 3/2 { d( fis d  fis d fis d fis d fis d fis) }
+      \tuplet 3/2 { e( fis e  fis e fis e fis e fis e fis) }
     }
 
     \repeat volta 2 { 
-      d16( fis d fis d fis d fis d fis d fis d fis d fis)
+      e16( fis e fis e fis e fis e fis e fis e fis e fis)
     }
 
 
     \pitchedTrill
-    d1\startTrillSpan fis 
+    e1\startTrillSpan fis 
 
 
     \break
@@ -214,20 +214,19 @@
 
 
     \repeat volta 2 { 
-      d8\stopTrillSpan( g d g d g d g)
+      e8\stopTrillSpan( g e g e g e g)
     }
 
     \repeat volta 2 {
-      \tuplet 3/2 { d( g d g d g d g d g d g) }
+      \tuplet 3/2 { e( g e g e g e g e g e g) }
     }
 
     \repeat volta 2 { 
-      d16( g d g d g d g d g d g d g d g)
+      e16( g e g e g e g e g e g e g e g)
     }
 
 
     \pitchedTrill
-    d1\startTrillSpan g 
+    e1\startTrillSpan g 
   }
-
 }
