@@ -34,11 +34,7 @@
 
     \repeat volta 2 { 
 
-        c-0 e-1 g-4 c-2 
-
-        e-1 g-4 c-2 g-4
-
-        e-1 c-2 g-4 e-1 
+        c-0 e-1 g-4 c-2 e-1 g-4 c-2 g-4 e-1 c-2 g-4 e-1 
     }
 
   }
@@ -67,11 +63,7 @@
 
     \repeat volta 2 { 
         
-        f-4 a-1 c-4 f-2
-
-        a-1 c-4 f-2 c-4
-
-        a-1 f-2 c-4 a-1
+        f-4 a-1 c-4 f-2 a-1 c-4 f-2 c-4 a-1 f-2 c-4 a-1
 
     }
 
@@ -99,9 +91,34 @@
 
     \repeat volta 2 { 
         
-        d-1 f-4 a-1 d-0 f-2 a-0 d-4
+        d-1 f-4 a-1 d-0 f-2 a-0 d-4 a-0 f-2 d-0 a-1 f-4
+    }
 
-        a-0 f-2 d-0 a-1 f-4
+  }
+  
+}
+
+\score {
+  \new Staff \with {
+	  midiInstrument = "cello"
+	  instrumentName = \markup \center-column { "G Minor" }
+  } \relative c {
+    \key g \minor
+    \relative
+    \clef "bass"
+
+    \repeat volta 2 { 
+    
+        g-0 a-1 bes-2 c-4 d-0 e-1 fis-3 g-4 a-0 bes-1 c-2 d-4 e-1 fis-3 g-4
+
+        f-2 ees-1 d-4 c-2 bes-1 a-0 g-4 f-2 ees-1 d-0 c-4 bes-2 a-1
+    }
+    
+    \break
+
+    \repeat volta 2 { 
+
+        g-0 bes-1 d-4 g-2 bes-1 d-3 g-2 d-3 bes-1 g-2 d-4 bes-1        
     }
 
   }
