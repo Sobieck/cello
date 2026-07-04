@@ -252,7 +252,7 @@
 
     \break
 
-    g'-4( b,-2 d,-1) b'
+    g'-4( b,-3 d,-1) b'
     g' b, g' b,
     g'( b, d,) b'
     g' b, g' b,
@@ -269,7 +269,7 @@
     fis( c d,) c'
     fis c fis c
 
-    <g' b, g,>1
+    <g' b, g,>1-1-3-4
 
   }
 }
