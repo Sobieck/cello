@@ -189,7 +189,7 @@
 
     \repeat volta 2 { 
     
-        a-1 b-2 cis-4 d-0 e-1 fis-2 gis-4 a-0 b-1 cis-3 d-1 e-3 fis-1 gis-2 a-3
+        a-1 b-2 cis-4 d-0 e-1 fis-2 gis-4 a-0-0 b-1-1 cis-3-3 d-1-4 e-3-1 fis-1-2 gis-2-4 a-3-3\flageolet
 
         gis-2 fis-1 e-3 d-1 cis-3 b-1 a-0 gis-4 fis-2 e-1 d-0 cis-4 b-2
     }
@@ -204,5 +204,33 @@
 
   }
 }
+
+\score {
+  \new Staff \with {
+	  midiInstrument = "cello"
+	  instrumentName = \markup \center-column { "A Minor" }
+  } \relative c {
+    \key a \minor
+    \relative
+    \clef "bass"
+
+    \repeat volta 2 { 
+    
+        a-1 b-3 c-4 d-0 e-1 fis-2 gis-4 a-0 b-1 c-2 d-1 e-3 fis-1 gis-2 a-3
+
+        g-2 f-1 e-3 d-1 c-2 b-1 a-0 g-4 f-2 e-1 d-0 c-4 b-3
+    }
+    
+    \break
+
+    \repeat volta 2 { 
+
+      a-1 c-4 e-1 a-0 c-1 e-4 a-3\flageolet e-4 c-1 a-0 e-1 c-4
+
+    }
+
+  }
+}
+
 
 
